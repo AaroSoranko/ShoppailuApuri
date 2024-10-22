@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muunninlaskurit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonbon&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="header-box">
+        <h1>Shoppailu apuri</h1>
+        </div>
+    </header>
+    <div id="info">
+        <h3>Valuuttalaskurit hakee ajantasaisen kurssidatan päivittäin.<br>Pituus ja mittataulukko muuntuu aina senttimetreiksi.<h3>
+    </div>
+
+    
+    <div id="calculator-container">
+        
+        <div class="calculator">
+            <h3>Valuuttalaskuri SEK</h3>
+            <div>
+                <label>SEK</label>
+                <input id="sek" type="number" data-rate="1"/>
+            </div>
+            <div>
+                <label>EUR</label>
+                <output id="eur">-</output>
+            </div>
+            <div>
+                <button type="button" id="calculateSek">Laske</button>
+            </div>
+        </div>
+
+        
+        <div class="calculator">
+            <h3>Valuuttalaskuri GBP</h3>
+            <div>
+                <label>GBP</label>
+                <input id="gbp" type="number" data-rate="1"/>
+            </div>
+            <div>
+                <label>EUR</label>
+                <output id="eurGbp">-</output>
+            </div>
+            <div>
+                <button type="button" id="calculateGbp">Laske</button>
+            </div>
+        </div>
+
+        
+        <div class="calculator">
+            <h3>Valuuttalaskuri USD</h3>
+            <div>
+                <label>USD</label>
+                <input id="usd" type="number" data-rate="1"/>
+            </div>
+            <div>
+                <label>EUR</label>
+                <output id="eurUsd">-</output>
+            </div>
+            <div>
+                <button type="button" id="calculateUsd">Laske</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="converter-container">
+        
+        <div class="calculator" id="length-converter">
+            <h3>Pituuden muunnin</h3>
+            <div>
+                <label>Jalkaa</label>
+                <input id="feet" type="number"/>
+            </div>
+            <div>
+                <label>Tuumaa</label>
+                <input id="inches" type="number"/>
+            </div>
+            <div>
+                
+                <output id="cm">-</output>
+            </div>
+            <div>
+                <button type="button" id="calculateLength">Laske</button>
+            </div>
+        </div>
+
+        
+        <div class="calculator" id="measurement-converter">
+            <h3>Mittataulukon muunnin</h3>
+            <div>
+                <label>Bust = Rinta (tuumaa)</label>
+                <input id="bust" type="number"/>
+                
+                <output id="cmBust">-</output>
+            </div>
+
+            <div>
+                <label>Underbust = Rintakehä (tuumaa)</label>
+                <input id="underbust" type="number"/>
+                
+                <output id="cmUnderbust">-</output>
+            </div>
+
+            <div>
+                <label>Waist = Vyötärö (tuumaa)</label>
+                <input id="waist" type="number"/>
+                
+                <output id="cmWaist">-</output>
+            </div>
+
+            <div>
+                <label>Hip = Lantio (tuumaa)</label>
+                <input id="hips" type="number"/>
+                
+                <output id="cmHips">-</output>
+            </div>
+
+            <div>
+                <button type="button" id="calculateMeasurements">Laske</button>
+            </div>
+        </div>
+
+        
+        <div id="measurement-image">
+            <img src="../Shoppailu apuri/img/measuringguide-new-3.jpg" alt="Mittataulukko" />
+        </div>
+    </div>
+
+    <script src="../Shoppailu apuri/js/functions.js"></script>
+</body>
+</html>
