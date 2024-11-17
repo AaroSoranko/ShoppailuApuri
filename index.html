@@ -17,7 +17,9 @@
         </div>
     </header>
     <div id="info">
-        <h3>Valuuttalaskurit hakee ajantasaisen kurssidatan päivittäin.<br>Pituus ja mittataulukko muuntuu aina senttimetreiksi.<h3>
+        <h3>Valuuttalaskurit hakee ajantasaisen kurssidatan päivittäin.
+            <br>Pituus ja mittataulukko muuntuu aina senttimetreiksi.
+            <br>Paino muuntuu paunoista(lb) kilogrammoiksi(kg) <h3>
     </div>
 
     
@@ -73,27 +75,36 @@
 
     
     <div id="converter-container">
-        
-        <div class="calculator" id="length-converter">
-            <h3>Pituuden muunnin</h3>
-            <div>
-                <label>Jalkaa</label>
-                <input id="feet" type="number"/>
-            </div>
-            <div>
-                <label>Tuumaa</label>
-                <input id="inches" type="number"/>
-            </div>
-            <div>
-                
+        <div class="column">
+            <div class="calculator" id="length-converter">
+                <h3>Pituuden muunnin</h3>
+                <div>
+                    <label>Jalkaa</label>
+                    <input id="feet" type="number"/>
+                </div>
+                <div>
+                    <label>Tuumaa</label>
+                    <input id="inches" type="number"/>
+                </div>
                 <output id="cm">-</output>
+                <div>
+                    <button type="button" id="calculateLength">Laske</button>
+                </div>
             </div>
-            <div>
-                <button type="button" id="calculateLength">Laske</button>
+    
+            <div class="calculator" id="weight-converter">
+                <h3>Painon muunnin</h3>
+                <div>
+                    <label>Paunaa</label>
+                    <input id="pounds" type="number"/>
+                </div>
+                <output id="kg">-</output>
+                <div>
+                    <button type="button" id="calculateWeight">Laske</button>
+                </div>
             </div>
         </div>
-
-        
+    
         <div class="calculator" id="measurement-converter">
             <h3>Mittataulukon muunnin</h3>
             <div>
@@ -131,7 +142,7 @@
 
         
         <div id="measurement-image">
-            <img src="../Shoppailu apuri/img/measuringguide-new-3.jpg" alt="Mittataulukko" />
+            <img src="../img/measuringguide-new-3.jpg" alt="Mittataulukko" />
         </div>
     </div>
 
