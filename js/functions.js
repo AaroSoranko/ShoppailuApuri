@@ -78,6 +78,12 @@ document.getElementById('calculateLength').addEventListener('click', function ()
     
 })
 
+document.getElementById('calculateWeight').addEventListener('click', function () {
+    const pounds = parseFloat(document.getElementById('pounds').value) || 0;
+    const result = (pounds * 0.453592).toFixed(2);
+    document.getElementById('kg').textContent = result;
+});
+
 document.getElementById('calculateMeasurements').addEventListener('click', function () {
     
     
